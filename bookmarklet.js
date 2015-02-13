@@ -7,6 +7,7 @@ $.getScript('https://rawgit.com/mkunkel/trello-card-copy/master/script.min.js')
 
 
 var $link = $('<a>').attr('href', 'javascript:$div.remove();').text('Close').attr('id', 'close-link');
+$link.css('float', 'right').css('color', '#FFFFFF');
 var $div = $('<div>').html(getOutput).addClass('progress-report');
 $('body').append($div);
 var left = ($(window).width() - $div.outerWidth()) / 2 + 'px';
