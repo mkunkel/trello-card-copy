@@ -9,6 +9,6 @@
 }
 
 .progress-report > a#close-link {
-  float: right;
-  color: #FFFFFF;
+  float: right !important;
+  color: #FFFFFF !important;
 }
