@@ -14,10 +14,8 @@ for(var i = 0; i < cards.length; i++) {
   }
 }
 // output.push('<a href="javascript:$div.remove();" style="float:right">Close</a>');
-var $link = $('<a>').attr('href', 'javascript:$div.remove();').css('float', 'right').text('Close').css('color', '#FFFFFF');
-var $div = $('<div>').html(output.join('<br>')).addClass('progress-report').css('position', 'absolute');
-$div.css('top', '0px').css('background-color', 'rgba(100, 100, 100, 1').css('color', '#FFFFFF');
-$div.css('padding', '20px').css('border-bottom-left-radius', '10px').css('border-bottom-right-radius', '10px');
+var $link = $('<a>').attr('href', 'javascript:$div.remove();').text('Close');
+var $div = $('<div>').html(output.join('<br>')).addClass('progress-report');
 $('body').append($div);
 var left = ($(window).width() - $div.outerWidth()) / 2 + 'px';
 $div.css('left', left).append($link);
