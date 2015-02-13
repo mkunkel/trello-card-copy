@@ -4,4 +4,10 @@ $("<link/>", {
    href: "https://cdn.rawgit.com/mkunkel/trello-card-copy/master/style.css"
 }).appendTo("head");
 $.getScript('https://rawgit.com/mkunkel/trello-card-copy/master/script.min.js')
-$('.progress-report').css('left', left).append($link);
+
+
+var $link = $('<a>').attr('href', 'javascript:$div.remove();').text('Close');
+var $div = $('<div>').html(getOutput).addClass('progress-report');
+$('body').append($div);
+var left = ($(window).width() - $div.outerWidth()) / 2 + 'px';
+$div.css('left', left).append($link);
