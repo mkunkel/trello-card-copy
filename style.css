@@ -8,7 +8,7 @@
   border-bottom-right-radius: 10px;
 }
 
-.progress-report a {
+.progress-report > a#close-link {
   float: right;
   color: #FFFFFF;
 }
