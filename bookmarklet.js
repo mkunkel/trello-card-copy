@@ -1,7 +1,7 @@
 $("<link/>", {
    rel: "stylesheet",
    type: "text/css",
-   href: "https://cdn.rawgit.com/mkunkel/trello-card-copy/44c1a1f243387291d242af41092eeee01bd47de0/style.css"
+   href: "https://cdn.jsdelivr.net/gh/mkunkel/trello-card-copy@44c1a1f243387291d242af41092eeee01bd47de0/style.css"
 }).appendTo("head");
 $.getScript('https://cdn.rawgit.com/mkunkel/trello-card-copy/44c1a1f243387291d242af41092eeee01bd47de0/script.min.js', function() {
   var $link = $('<a>').attr('href', 'javascript:$(".progress-report").slideUp(600,function(){$(".progress-report").remove()});').text('Close').attr('id', 'close-link');

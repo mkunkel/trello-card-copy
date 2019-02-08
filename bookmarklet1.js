@@ -1,7 +1,7 @@
 $("<link/>", {
    rel: "stylesheet",
    type: "text/css",
-   href: "https://rawgit.com/mkunkel/trello-card-copy/master/style.css"
+   href: "https://cdn.jsdelivr.net/gh/mkunkel/trello-card-copy@master/style.css"
 }).appendTo("head");
 $.getScript('https://rawgit.com/mkunkel/trello-card-copy/master/script.js', function() {
   var $link = $('<a>').attr('href', 'javascript:$(".progress-report").slideUp(600,function(){$(".progress-report").remove()});').text('Close').attr('id', 'close-link');
